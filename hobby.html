@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hobby</title>
+    <style>
+        body {
+            background-image: url('img/background.jpg'); /* Replace 'img/background.jpg' with the path to your image */
+            background-size: cover; /* This makes the image cover the whole background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+            margin: 0;
+            padding-left: 20px;   
+            font-family: Arial, sans-serif; 
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            padding: 10px 20px;
+        }
+        .logo {
+            width: 100px; 
+            height: 100px; /* Ensures the image remains a circle */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image fits within the bounds of the circle */
+        }
+        a {
+            text-decoration: none; 
+            color: #1F618D; 
+            font-family: Forte, Arial, sans-serif; 
+            font-size: 30px; 
+            display: inline-block; 
+            padding: 10px 15px; 
+        }
+        a:hover {
+            font-weight: bold;
+        }
+        .dropbtn {
+            background-color: #2471A3;
+            color: white;
+            padding: 16px;
+            border: none;
+            font-family: Forte, Arial, sans-serif; 
+            font-size: 22px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #ddd;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #5499C7;}
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #2471A3;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        #scrollTopBtn:hover {
+            background-color: #5499C7;
+        }
+        .centered-audio {
+            display: block;
+            margin: 20px auto;
+        }
+        .hobby-section {
+            margin-bottom: 40px; /* Adds spacing between hobby sections */
+        }
+        .hobby-section img {
+            display: inline-block;
+            margin: 20px;
+            vertical-align: top;
+        }
+        .reading-novel img {
+            width: 350px;
+            height: 250px;
+        }
+        .reading-manga img {
+            width: 200px;
+            height: 300px;
+        }
+        .cooking img {
+            width: 250px;
+            height: 150px;
+        }
+        .gaming img {
+            width: 300px;
+            height: 200px;
+        }
+        .watching img {
+            width: 300px;
+            height: 200px;
+        }
+        .listening img {
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="img/Logo.jpg" alt="Hanisah logo" title="Hanisah Logo~" class="logo">
+    </a>
+</header>
+<hr>
+<nav>
+    <table cellspacing="6" cellpadding="6">
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="family.html">Family</a></td>
+            <td><a href="biodata.html">Biodata</a></td>
+            <td><a href="education.html">Education</a></td>
+            <td><a href="hobby.html">Hobby</a></td>
+            <td><a href="gallery.html">Gallery</a></td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">About Me</button>
+                    <div class="dropdown-content">
+                        <a href="biodata.html" target="xyz">Biodata</a>
+                        <a href="family.html" target="xyz">Family</a>
+                        <a href="education.html" target="xyz">Education</a>
+                        <a href="hobby.html" target="xyz">Hobby</a>
+                        <a href="gallery.html" target="xyz">Gallery</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</nav>
+<hr>
+
+<audio controls class="centered-audio">
+    <source src="media/bts instrument.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<h2>My Hobbies</h2>
+<p>I have many interesting hobbies:</p>
+
+<div class="hobby-section reading-novel">
+    <h3>1) Reading Novel</h3>
+    <img src="img/novel2.jpg" alt="Reading Novel" title="Novels"> 
+    <img src="img/novel3.jpg" alt="Reading Novel" title="Novels">
+</div>
+
+<div class="hobby-section reading-manga">
+    <h3>2) Reading Online Manga/Manhwa/Manhua</h3>
+    <img src="img/manga1.jpg" alt="Reading Manga" title="Manhwa">
+    <img src="img/manga2.jpg" alt="Reading Manga" title="Manhwa">
+    <img src="img/manga3.jpg" alt="Reading Manga" title="Manga">
+    <img src="img/manga4.jpg" alt="Reading Manga" title="Manhwa">
+    <img src="img/manga5.jpg" alt="Reading Manga" title="Manga">  
+</div>
+
+<div class="hobby-section cooking">
+    <h3>3) Cooking</h3>
+    <img src="img/food1.jpg" alt="Cooking" title="Cooking">
+    <img src="img/food2.jpg" alt="Cooking" title="Cooking">
+    <img src="img/food3.jpg" alt="Cooking" title="Cooking">
+    <img src="img/food4.jpg" alt="Cooking" title="Cooking">
+    <img src="img/food5.jpg" alt="Cooking" title="Cooking">
+    <img src="img/food6.jpg" alt="Cooking" title="Cooking">
+    <img src="img/food7.jpg" alt="Cooking" title="Cooking">
+    <img src="img/food8.jpg" alt="Cooking" title="Cooking">
+</div>
+
+<div class="hobby-section gaming">
+    <h3>4) Gaming</h3>
+    <img src="img/game1.jpg" alt="Gaming" title="Gaming">
+    <img src="img/game2.png" alt="Gaming" title="Gaming">
+    <img src="img/game3.jpg" alt="Gaming" title="Gaming">
+    <img src="img/game4.jpg" alt="Gaming" title="Gaming">
+</div>
+
+<div class="hobby-section watching">
+    <h3>5) Watching Movies/Drama/Anime</h3>
+    <img src="img/anime.png" alt="Watching Movies" title="LokLok">
+    <img src="img/anime2.png" alt="Watching Movies" title="Youtube">
+</div>
+
+<div class="hobby-section listening">
+    <h3>6) Listening to Music</h3>
+    <img src="img/music1.png" alt="Listening to Music" title="YouTube Music">
+    <img src="img/music2.jpg" alt="Listening to Music" title="BTS">
+</div>
+
+<!-- Scroll to top button -->
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>

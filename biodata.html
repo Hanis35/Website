@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biodata</title>
+    <style>
+        body {
+            background-image: url('img/background.jpg'); /* Replace 'img/background.jpg' with the path to your image */
+            background-size: cover; /* This makes the image cover the whole background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+            margin: 0;
+            padding-left: 20px; /* Adds space on the left side of the page */
+            font-family: Arial, sans-serif; 
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            padding: 10px 20px;
+        }
+        .logo {
+            width: 100px; 
+            height: 100px; /* Ensures the image remains a circle */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image fits within the bounds of the circle */
+        }
+        img {
+            width: 80px; 
+            height: 80px; /* Ensures the image remains a circle */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image fits within the bounds of the circle */
+        }
+        a {
+            text-decoration: none; 
+            color: #1F618D; 
+            font-family: Forte, Arial, sans-serif; 
+            font-size: 30px; 
+            display: inline-block; 
+            padding: 10px 15px; 
+        }
+        a:hover {
+            font-weight: bold;
+        }
+        .dropbtn {
+            background-color: #2471A3;
+            color: white;
+            padding: 16px;
+            border: none;
+            font-family: Forte, Arial, sans-serif; 
+            font-size: 22px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #ddd;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #5499C7;}
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #2471A3;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        #scrollTopBtn:hover {
+            background-color: #5499C7;
+        }
+        .centered-audio {
+            display: block;
+            margin: 20px auto;
+        }
+        .biodata-table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #D6EAF8;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .biodata-table th, .biodata-table td {
+            padding: 10px 20px;
+            border: 1px solid #1A5276;
+            text-align: left;
+        }
+        .biodata-table th {
+            background-color: #1F618D;
+            color: white;
+            font-family: Forte, Arial, sans-serif;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="img/Logo.jpg" alt="Hanisah logo" title="Hanisah Logo~" class="logo">
+    </a>
+</header>
+<hr>
+<nav>
+    <table cellspacing="6" cellpadding="6">
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="biodata.html">Biodata</a></td>
+            <td><a href="family.html">Family</a></td>
+            <td><a href="education.html">Education</a></td>
+            <td><a href="hobby.html">Hobby</a></td>
+            <td><a href="gallery.html">Gallery</a></td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">About Me</button>
+                    <div class="dropdown-content">
+                        <a href="biodata.html" target="xyz">Biodata</a>
+                        <a href="family.html" target="xyz">Family</a>
+                        <a href="education.html" target="xyz">Education</a>
+                        <a href="hobby.html" target="xyz">Hobby</a>
+                        <a href="gallery.html" target="xyz">Gallery</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</nav>
+<hr>
+
+<audio controls class="centered-audio">
+    <source src="media/bts instrument.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<h2 class="biodata-title">My Biodata~</h2>
+<table class="biodata-table">
+    <tr>
+        <th>Field</th>
+        <th>Details</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>Nor Hanisah Athirah Binti Mohazam</td>
+    </tr>
+    <tr>
+        <td>Sex</td>
+        <td>Female</td>
+    </tr>
+    <tr>
+        <td>Date of Birth</td>
+        <td>31/3/2001</td>
+    </tr>
+    <tr>
+        <td>Birth Place</td>
+        <td>Hospital besar Seremban</td>
+    </tr>
+    <tr>
+        <td>Citizenship</td>
+        <td>Malaysia</td>
+    </tr>
+    <tr>
+        <td>Religion</td>
+        <td>Islam</td>
+    </tr>
+    <tr>
+        <td>Nation</td>
+        <td>Melay</td>
+    </tr>
+    <tr>
+        <td>Number of Siblings</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Sibling Sequence</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Home Address</td>
+        <td>Lot 1732, FAMA, Kampung Simpang Pelangai 28740, Bentong, Pahang, Malaysia</td>
+    </tr>
+    <tr>
+        <td>E-mail</td>
+        <td>vnnis.vthirvh35@gmail.com</td>
+    </tr>
+    <tr>
+        <td>No. Phone</td>
+        <td>011-56922443</td>
+    </tr>
+</table>
+
+<!-- Scroll to top button -->
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>

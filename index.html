@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hanisah~</title>
+    <style>
+        body {
+            background-image: url('img/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding-left: 20px;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            padding: 10px 20px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        a {
+            text-decoration: none;
+            color: #1F618D;
+            font-family: Forte, Arial, sans-serif;
+            font-size: 22px;
+            display: inline-block;
+            padding: 10px 15px;
+        }
+        a:hover {
+            font-weight: bold;
+        }
+        .dropbtn {
+            background-color: #2471A3;
+            color: white;
+            padding: 16px;
+            border: none;
+            font-family: Forte, Arial, sans-serif;
+            font-size: 22px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #ddd;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #5499C7;}
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #2471A3;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        #scrollTopBtn:hover {
+            background-color: #5499C7;
+        }
+        .centered-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+        .centered-image, .centered-video {
+            width: 50%;
+            max-width: 400px;
+            height: auto;
+        }
+        .centered-audio {
+            display: block;
+            margin: 20px auto;
+        }
+        .family-content {
+            text-align: center;
+            color: #1F618D;
+            font-family: Forte, Arial, sans-serif;
+            font-size: 28px;
+        }
+        .family-member {
+            margin: 20px 0;
+        }
+        .family-member img {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="img/Logo.jpg" alt="Hanisah logo" title="Hanisah Logo~" class="logo">
+    </a>
+</header>
+<hr>
+<nav>
+    <table cellspacing="6" cellpadding="6">
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="biodata.html">Biodata</a></td>
+            <td><a href="family.html">Family</a></td>
+            <td><a href="education.html">Education</a></td>
+            <td><a href="hobby.html">Hobby</a></td>
+            <td><a href="gallery.html">Gallery</a></td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">About Me</button>
+                    <div class="dropdown-content">
+                        <a href="biodata.html" target="xyz">Biodata</a>
+                        <a href="family.html" target="xyz">Family</a>
+                        <a href="education.html" target="xyz">Education</a>
+                        <a href="hobby.html" target="xyz">Hobby</a>
+                        <a href="gallery.html" target="xyz">Gallery</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</nav>
+<hr>
+
+<audio controls class="centered-audio">
+    <source src="media/bts instrument.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<h2>Lovelies! Welcome to My Pageee!</h2>
+<p>A normal human on this earth named Hanisah here~ Pleasure to meet ya!</p>
+<p>This website introduces to you about my journey of life~</p>
+
+<div class="centered-media">
+    <img src="img/pantai.jpeg" alt="Pantai with Hanis" title="Pantai with Hanis~" class="centered-image">
+    <video controls class="centered-video">
+        <source src="media/sunset.mp4" type="video/mp4" title="Sunset">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<!-- Scroll to top button -->
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>

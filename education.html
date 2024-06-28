@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Education</title>
+    <style>
+        body {
+            background-image: url('img/background.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+            background-size: cover; /* This makes the image cover the whole background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+            margin: 0;  
+	    padding-left: 20px; 
+            font-family: Arial, sans-serif; 
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            padding: 10px 20px;
+        }
+        .logo {
+            width: 100px; 
+            height: 100px; /* Ensures the image remains a circle */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image fits within the bounds of the circle */
+}
+        a {
+            text-decoration: none; 
+            color: #1F618D; 
+            font-family: Forte, Arial, sans-serif; 
+            font-size: 30px; 
+            display: inline-block; 
+            padding: 10px 15px; 
+        }
+        a:hover {
+            font-weight: bold;
+        }
+        .dropbtn {
+            background-color: #2471A3;
+            color: white;
+            padding: 16px;
+            border: none;
+            font-family: Forte, Arial, sans-serif; 
+            font-size: 22px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #ddd;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #5499C7;}
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #2471A3;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        #scrollTopBtn:hover {
+            background-color: #5499C7;
+        }
+        .centered-audio {
+            display: block;
+            margin: 20px auto;
+        }
+        .education-content {
+            margin-left: 20px;
+            text-align: left;
+            color: #1F618D;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+        h2 {
+            font-family: Forte, Arial, sans-serif;
+            font-size: 30px;
+            text-align: center;
+            color: #1F618D;
+        }
+        .education-step {
+            margin-top: 30px;
+        }
+        .education-step p {
+            font-family: "Comic Sans MS", cursive;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .education-step img {
+            border-radius: 10px;
+            object-fit: cover;
+            margin-top: 10px;
+        }
+        .kindergarten-img {
+            width: 350px;
+            height: 240px;
+        }
+        .elementary1-img {
+            width: 350px;
+            height: 240px;
+        }
+        .elementary2-img {
+            width: 350px;
+            height: 240px;
+        }
+        .elementary3-img {
+            width: 350px;
+            height: 240px;
+        }
+        .secondary1-img {
+            width: 350px;
+            height: 240px;
+        }
+        .secondary2-img {
+            width: 350px;
+            height: 240px;
+        }
+        .diploma-img {
+            width: 350px;
+            height: 240px;
+        }
+        .degree-img {
+            width: 350px;
+            height: 240px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="img/Logo.jpg" alt="Hanisah logo" title="Hanisah Logo~" class="logo">
+    </a>
+</header>
+<hr>
+<nav>
+    <table cellspacing="6" cellpadding="6">
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="biodata.html">Biodata</a></td>
+            <td><a href="family.html">Family</a></td>
+            <td><a href="education.html">Education</a></td>
+            <td><a href="hobby.html">Hobby</a></td>
+            <td><a href="gallery.html">Gallery</a></td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">About Me</button>
+                    <div class="dropdown-content">
+                        <a href="biodata.html" target="xyz">Biodata</a>
+                        <a href="family.html" target="xyz">Family</a>
+                        <a href="education.html" target="xyz">Education</a>
+                        <a href="hobby.html" target="xyz">Hobby</a>
+                        <a href="gallery.html" target="xyz">Gallery</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</nav>
+<hr>
+
+<audio controls class="centered-audio">
+    <source src="media/bts instrument.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<div class="education-content">
+    <h2>My Education Journey</h2>
+
+    <div class="education-step">
+        <h3>Kindergarten</h3>
+        <p>I started attending kindergarten at the age of 5 at PASTI, Kampung Baharu Labu Lanjut, Sepang, Selangor</p>
+        <img src="img/pasti.jpg" alt="Kindergarten" title="Pasti" class="kindergarten-img">
+    </div>
+
+    <div class="education-step">
+        <h3>Elementary School 1</h3>
+        <p>I attended primary school from grade 1 to 2 and a half at SK Kampung Baharu Lanjut, Sepang, Selangor</p>
+        	<img src="img/sk1.jpg" alt="Elementary School 1" title="SK Kampung Baharu Lanjut" class="elementary1-img">
+    </div>
+
+    <div class="education-step">
+        <h3>Elementary School 2</h3>
+        <p>Then I moved and spent the other half at SK Ayer Hitam Bandar Seri Jempol, Negeri Sembilan</p>
+        <img src="img/sk2.jpg" alt="Elementary School 2" title="SK Ayer Hitam Bandar Seri Jempol" class="elementary2-img">
+    </div>
+
+    <div class="education-step">
+        <h3>Elementary School 3</h3>
+        <p>Upon moving to Rawang, Selangor, I attended SK Bandar Sungai Buaya in Rawang for grades 3 to 6</p>
+        <img src="img/sk3.jpg" alt="Elementary School 3" title="SK Bandar Sungai Buaya" class="elementary3-img">
+    </div>
+
+    <div class="education-step">
+        <h3>Secondary School 1</h3>
+        <p>I continued to secondary school at SMK Bandar Sungai Buaya in form 1 to form 4</p>
+        <img src="img/smk2.png" alt="Secondary School 1" title="SMK Bandar Sungai Buaya" class="secondary1-img">
+	<img src="img/smk1.jpg" alt="Secondary School 1" title="SMK Bandar Sungai Buaya" class="secondary1-img">
+    </div>
+
+    <div class="education-step">
+        <h3>Secondary School 2</h3>
+        <p>I moved again and finished form 5 in SMK Seri Intan in Kluang, Johor</p>
+        <img src="img/smk3.jpg" alt="Secondary School 2" title="SMK Seri Intan" class="secondary2-img"> 
+    </div>
+
+    <div class="education-step">
+        <h3>Diploma</h3>
+        <p>I continued my studies at a higher education institution (IPTA) in Diploma level at Politeknik Premier Sultan Salahuddin Abdul Aziz Shah (PSA) in Shah Alam, Selangor</p>
+        <img src="img/poli1.jpg" alt="Diploma" title="Politeknik Premier Sultan Salahuddin Abdul Aziz Shah" class="diploma-img">
+	<img src="img/poli2.jpg" alt="Diploma" title="Politeknik Premier Sultan Salahuddin Abdul Aziz Shah" class="diploma-img">
+    </div>
+
+    <div class="education-step">
+        <h3>Degree (Current)</h3>
+        <p>Finally, I am currently pursuing my bachelor's degree at  University Teknologi Mara(UiTM) in Merbok, Kedah</p>
+        <img src="img/uitm1.jpg" alt="Degree (Current)" title="University Teknologi Mara" class="degree-img">
+    </div>
+</div>
+
+<!-- Scroll to top button -->
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>
